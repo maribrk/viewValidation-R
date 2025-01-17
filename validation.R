@@ -1,12 +1,12 @@
 # Set working directory
-setwd("C:/Users/mariaf59/OneDrive - Braskem S.A/Documentos/Projetos/Data Lake - OTIF/ZF1RLE014 - Ordens de Transporte")
+setwd("")
 
 # Read the vw file
-vw_OTs <- read.csv2("ZF1RLE014 Validacao_vwOTIFOts_2025-01-17_QAS.csv", header=TRUE, stringsAsFactors=FALSE, fileEncoding="latin1")
+vw_OTs <- read.csv2("view.csv", header=TRUE, stringsAsFactors=FALSE, fileEncoding="latin1")
 head(vw_OTs)
 
 # Read the sap file
-sapdata <- read.csv2("ZF1RLE014 Geral QAS - Ordens de Transporte.csv", header=TRUE, stringsAsFactors=FALSE, fileEncoding="latin1")
+sapdata <- read.csv2("sap.csv", header=TRUE, stringsAsFactors=FALSE, fileEncoding="latin1")
 head(sapdata)
 
 # Initialize lists to store file names
